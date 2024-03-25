@@ -76,7 +76,7 @@
     pinctrl-0 = <&spi2_default>;
     pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
-//    cs-gpios = <&gpio0 09 GPIO_ACTIVE_LOW>;
+//    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 };
 
 &spi3 {
@@ -84,12 +84,12 @@
     pinctrl-0 = <&spi3_default>;
     pinctrl-1 = <&spi3_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 06 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
 };
 
 &uart0 {
     compatible = "nordic,nrf-uarte";
-    current-speed = <110010>;
+    current-speed = <115200>;
     pinctrl-0 = <&uart0_default>;
     pinctrl-1 = <&uart0_sleep>;
     pinctrl-names = "default", "sleep";
