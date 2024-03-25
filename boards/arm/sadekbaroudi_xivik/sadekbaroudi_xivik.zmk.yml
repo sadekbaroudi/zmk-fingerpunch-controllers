@@ -1,0 +1,9 @@
+file_format: "1"
+id: sadekbaroudi_xivik
+name: Sadekbaroudi xivik
+type: board
+arch: arm
+outputs:
+  - usb
+url: https://github.com/sadekbaroudi/vik
+exposes: [seeed_xiao, sadekbaroudi_vik]

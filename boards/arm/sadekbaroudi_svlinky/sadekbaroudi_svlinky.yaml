@@ -1,0 +1,14 @@
+identifier: sadekbaroudi_xivik
+name: Sadekbaroudi xivik
+type: mcu
+arch: arm
+flash: 8092
+ram: 264
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - i2c
+  - spi
+  - serial

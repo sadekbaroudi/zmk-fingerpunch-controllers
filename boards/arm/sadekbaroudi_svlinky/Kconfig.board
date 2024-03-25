@@ -1,0 +1,6 @@
+# Copyright (c) 2021 Pete Johanson
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_SADEKBAROUDI_SVLINKY
+	bool "Sadekbaroudi svlinky"
+	depends on SOC_RP2040
