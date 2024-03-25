@@ -25,4 +25,4 @@
 };
 
 vik_i2c: &i2c1 {};
-vik_spi: &spi1 {};
+vik_spi: &spi3 {};

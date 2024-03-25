@@ -12,7 +12,7 @@
         gpio-map-mask = <0xffffffff 0xffffffc0>;
         gpio-map-pass-thru = <0 0x3f>;
         gpio-map
-            = <0 0 &gpio0 4 0>      /* D0 */
+            = <0 0 &gpio0 28 0>     /* D0 - was P0.04 on mikoto */
             , <1 0 &gpio0 8 0>      /* D1 */
             , <2 0 &gpio0 17 0>     /* D2 */
             , <3 0 &gpio0 20 0>     /* D3 */
@@ -55,5 +55,5 @@
 
 pro_micro_d: &pro_micro {};
 pro_micro_i2c: &i2c0 {};
-pro_micro_spi: &spi0 {};
+pro_micro_spi: &spi2 {};
 pro_micro_serial: &uart0 {};
