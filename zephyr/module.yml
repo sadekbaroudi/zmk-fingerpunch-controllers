@@ -1,7 +1,7 @@
-name: fingerpunch-controllers
+# name: fingerpunch-controllers
 build:
-  depends:
-    - vik-core
+  # depends:
+  #   - vik-core
   settings:
     board_root: .
     dts_root: .
