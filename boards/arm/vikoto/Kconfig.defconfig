@@ -3,7 +3,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_VIKOTO_001
+if BOARD_VIKOTO
 
 config BOARD
     default "vikoto"
@@ -25,4 +25,4 @@ choice BOARD_VIKOTO_CHARGER_CURRENT
     default BOARD_VIKOTO_CHARGER_CURRENT_100MA
 endchoice
 
-endif # BOARD_VIKOTO_001
+endif # BOARD_VIKOTO

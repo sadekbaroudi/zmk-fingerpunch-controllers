@@ -1,5 +1,5 @@
-identifier: vikoto_001
-name: vikoto_001
+identifier: vikoto
+name: vikoto
 type: mcu
 arch: arm
 toolchain:

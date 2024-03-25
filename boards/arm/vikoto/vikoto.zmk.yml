@@ -1,6 +1,6 @@
 file_format: "1"
-id: vikoto_001
-name: Vikoto 0.1
+id: vikoto
+name: Vikoto
 type: board
 arch: arm
 outputs:

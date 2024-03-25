@@ -13,7 +13,7 @@
 
 static int pinmux_vikoto_init(void) {
 
-#if CONFIG_BOARD_VIKOTO_001
+#if CONFIG_BOARD_VIKOTO
     const struct device *p0 = DEVICE_DT_GET(DT_NODELABEL(gpio0));
     const struct device *p1 = DEVICE_DT_GET(DT_NODELABEL(gpio1));
 #if CONFIG_BOARD_VIKOTO_CHARGER_CURRENT_40MA
