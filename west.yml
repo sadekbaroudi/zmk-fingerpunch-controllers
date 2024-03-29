@@ -1,9 +1,0 @@
-manifest:
-  remotes:
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
-  projects:
-    - name: zmk-fingerpunch-vik
-      remote: sadekbaroudi
-      revision: main
-      clone-depth: 1
