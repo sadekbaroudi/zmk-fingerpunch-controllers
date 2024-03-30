@@ -16,42 +16,21 @@
 		};
 	};
 
-	/*
-	i2c1_default: i2c1_default {
-		group1 {
-			pinmux = <I2C1_SDA_P2>;
-			input-enable;
-		};
-		group2 {
-			pinmux = <I2C1_SCL_P3>;
-			input-enable;
-		};
-	};
-	*/
-
+	// through hole spi pinout
 	spi0_default: spi0_default {
 		group1 {
-			pinmux = <SPI0_TX_P19>;
+			pinmux = <SPI0_TX_P23>;
 		};
 		group2 {
 			pinmux = <SPI0_RX_P20>;
 			input-enable;
 		};
 		group3 {
-			pinmux = <SPI0_SCK_P18>;
+			pinmux = <SPI0_SCK_P22>;
 		};
 	};
 
-	i2c1_default: i2c1_default {
-		group1 {
-			pinmux = <I2C1_SDA_P10>;
-			input-enable;
-		};
-		group2 {
-			pinmux = <I2C1_SCL_P11>;
-		};
-	};
-
+	// vik spi pinout
 	spi1_default: spi1_default {
 		group1 {
 			pinmux = <SPI1_TX_P15>;
@@ -62,6 +41,28 @@
 		};
 		group3 {
 			pinmux = <SPI1_SCK_P14>;
+		};
+	};
+
+	// vik i2c pinout
+	i2c0_default: i2c0_default {
+		group1 {
+			pinmux = <I2C0_SDA_P10>;
+			input-enable;
+		};
+		group2 {
+			pinmux = <I2C0_SCL_P11>;
+		};
+	};
+
+	// through hole i2c pinout
+	i2c1_default: i2c1_default {
+		group1 {
+			pinmux = <I2C1_SDA_P2>;
+			input-enable;
+		};
+		group2 {
+			pinmux = <I2C1_SCL_P3>;
 		};
 	};
 };

@@ -6,27 +6,38 @@
 #include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
 &pinctrl {
+	// through hole i2c pinout
 	i2c0_default: i2c0_default {
 		group1 {
-			pinmux = <I2C0_SDA_P4>;
+			// v0.1
+			// pinmux = <I2C0_SDA_P4>;
+			pinmux = <I2C0_SDA_P5>;
 			input-enable;
 		};
 		group2 {
-			pinmux = <I2C0_SCL_P5>;
+			// v0.1
+			// pinmux = <I2C0_SCL_P5>;
+			pinmux = <I2C0_SCL_P6>;
 		};
 	};
 
+	// vik i2c pinout
 	i2c1_default: i2c1_default {
 		group1 {
-			pinmux = <I2C1_SDA_P22>;
+			// v0.1
+			// pinmux = <I2C1_SDA_P22>;
+			pinmux = <I2C1_SDA_P8>;
 			input-enable;
 		};
 		group2 {
-			pinmux = <I2C1_SCL_P23>;
+			// v0.1
+			// pinmux = <I2C1_SCL_P23>;
+			pinmux = <I2C1_SCL_P9>;
 		};
 	};
 
-	spi1_default: spi1_default {
+	// vik spi pinout
+	spi0_default: spi0_default {
 		group1 {
 			pinmux = <SPI1_TX_P15>;
 		};
@@ -38,4 +49,36 @@
 			pinmux = <SPI1_SCK_P14>;
 		};
 	};
+
+
+	// through hole spi pinout
+	spi1_default: spi1_default {
+		group1 {
+			pinmux = <SPI1_TX_P23>;
+		};
+		group2 {
+			pinmux = <SPI1_RX_P20>;
+			input-enable;
+		};
+		group3 {
+			pinmux = <SPI1_SCK_P22>;
+		};
+	};
+
+	/**
+	// v0.1
+	// through hole spi pinout
+	spi1_default: spi1_default {
+		group1 {
+			pinmux = <SPI1_TX_P24>;
+		};
+		group2 {
+			pinmux = <SPI1_RX_P9>;
+			input-enable;
+		};
+		group3 {
+			pinmux = <SPI1_SCK_P8>;
+		};
+	};
+	*/
 };

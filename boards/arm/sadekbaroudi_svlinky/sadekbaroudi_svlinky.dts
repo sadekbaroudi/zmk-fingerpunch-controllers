@@ -55,19 +55,23 @@
 	};
 };
 
+&spi0 {
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-names = "default";
+	clock-frequency = <DT_FREQ_M(2)>;
+};
+
 &spi1 {
 	pinctrl-0 = <&spi1_default>;
 	pinctrl-names = "default";
 	clock-frequency = <DT_FREQ_M(2)>;
 };
 
-/*
 &i2c0 {
 	pinctrl-0 = <&i2c0_default>;
 	pinctrl-names = "default";
 	clock-frequency = <I2C_BITRATE_FAST>;
 };
-*/
 
 &i2c1 {
 	pinctrl-0 = <&i2c1_default>;
