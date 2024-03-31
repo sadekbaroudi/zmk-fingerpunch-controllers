@@ -68,13 +68,13 @@
 };
 
 &i2c0 {
-	pinctrl-0 = <&i2c0_default>;
+	pinctrl-0 = <&i2c1_default>;
 	pinctrl-names = "default";
 	clock-frequency = <I2C_BITRATE_FAST>;
 };
 
 &i2c1 {
-	pinctrl-0 = <&i2c1_default>;
+	pinctrl-0 = <&i2c1_vik>;
 	pinctrl-names = "default";
 	clock-frequency = <I2C_BITRATE_FAST>;
 };
