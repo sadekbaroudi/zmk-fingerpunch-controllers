@@ -54,4 +54,4 @@
 
 // need to comment out two lines below for v0.1
 xiao_spi: &spi0 {};
-// xiao_serial: &uart0 {};
+xiao_serial: &uart0 {};

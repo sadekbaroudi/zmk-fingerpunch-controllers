@@ -59,12 +59,6 @@
 	clock-frequency = <DT_FREQ_M(2)>;
 };
 
-&spi0 {
-	pinctrl-0 = <&spi0_default>;
-	pinctrl-names = "default";
-	clock-frequency = <DT_FREQ_M(2)>;
-};
-
 &spi1 {
 	pinctrl-0 = <&spi1_default>;
 	pinctrl-names = "default";
