@@ -41,8 +41,7 @@
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 23)>,
                 <NRF_PSEL(TWIM_SCL, 0, 19)>;
-            // If you want to use internal pull ups on vik, need to enable
-            // Not recommended, use SPI instead
+            // This shouldn't be here, moved to zmk-fingerpunch-vik repo at the board level in vik_cirque_i2c shield
             // bias-pull-up;
         };
     };
@@ -52,8 +51,7 @@
             psels = <NRF_PSEL(TWIM_SDA, 0, 23)>,
                 <NRF_PSEL(TWIM_SCL, 0, 19)>;
             low-power-enable;
-            // If you want to use internal pull ups on vik, need to enable
-            // Not recommended, use SPI instead
+            // This shouldn't be here, moved to zmk-fingerpunch-vik repo at the board level in vik_cirque_i2c shield
             // bias-pull-up;
         };
     };
