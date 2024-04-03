@@ -24,14 +24,10 @@
 	i2c0_default: i2c0_default {
 		group1 {
 			// v0.1 - need to swap to i2c1 as well
-			// pinmux = <I2C1_SDA_P22>;
-			pinmux = <I2C0_SDA_P8>;
+			// pinmux = <I2C1_SDA_P22>, <I2C1_SCL_P23>;
+			pinmux = <I2C0_SDA_P8>, <I2C0_SCL_P9>;
 			input-enable;
-		};
-		group2 {
-			// v0.1 - need to swap to i2c1 as well
-			// pinmux = <I2C1_SCL_P23>;
-			pinmux = <I2C0_SCL_P9>;
+			input-schmitt-enable;
 		};
 	};
 
@@ -41,16 +37,11 @@
 	i2c1_default: i2c1_default {
 		group1 {
 			// v0.1
-			pinmux = <I2C0_SDA_P4>;
+			pinmux = <I2C0_SDA_P4>, pinmux = <I2C0_SCL_P5>;
 			// v0.2 - see comment above i2c1_default declaration
-			// pinmux = <RP2040_PINMUX(5, RP2_PINCTRL_GPIO_FUNC_I2C)>;
+			// pinmux = <RP2040_PINMUX(5, RP2_PINCTRL_GPIO_FUNC_I2C)>, <RP2040_PINMUX(6, RP2_PINCTRL_GPIO_FUNC_I2C)>;
 			input-enable;
-		};
-		group2 {
-			// v0.1
-			pinmux = <I2C0_SCL_P5>;
-			// v0.2 - see comment above i2c1_default declaration
-			// pinmux = <RP2040_PINMUX(6, RP2_PINCTRL_GPIO_FUNC_I2C)>;
+			input-schmitt-enable;
 		};
 	};
 	*/

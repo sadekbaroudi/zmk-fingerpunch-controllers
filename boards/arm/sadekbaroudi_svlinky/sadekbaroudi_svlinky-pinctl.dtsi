@@ -47,22 +47,18 @@
 	// vik i2c pinout
 	i2c1_vik: i2c1_vik {
 		group1 {
-			pinmux = <I2C1_SDA_P10>;
+			pinmux = <I2C1_SDA_P10>, <I2C1_SCL_P11>;
 			input-enable;
-		};
-		group2 {
-			pinmux = <I2C1_SCL_P11>;
+			input-schmitt-enable;
 		};
 	};
 
 	// through hole i2c pinout
 	i2c1_default: i2c1_default {
 		group1 {
-			pinmux = <I2C1_SDA_P2>;
+			pinmux = <I2C1_SDA_P2>, <I2C1_SCL_P3>;
 			input-enable;
-		};
-		group2 {
-			pinmux = <I2C1_SCL_P3>;
+			input-schmitt-enable;
 		};
 	};
 };
