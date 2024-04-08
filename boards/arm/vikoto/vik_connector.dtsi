@@ -26,3 +26,4 @@
 
 vik_i2c: &i2c1 {};
 vik_spi: &spi3 {};
+vik_spi_pmw3610: &spi1 {};

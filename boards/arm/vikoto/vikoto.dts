@@ -73,6 +73,13 @@
     pinctrl-names = "default", "sleep";
 };
 
+&spi1 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_vik_pmw3610_default>;
+    pinctrl-1 = <&spi1_vik_pmw3610_sleep>;
+    pinctrl-names = "default", "sleep";
+};
+
 &spi2 {
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi2_default>;
