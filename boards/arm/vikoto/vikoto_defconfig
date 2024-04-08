@@ -24,3 +24,6 @@ CONFIG_FLASH_MAP=y
 
 CONFIG_ZMK_USB=y
 CONFIG_ZMK_BLE=y
+
+# workaround for now to enable external power on startup for vik modules
+# CONFIG_GPIO_HOGS=y

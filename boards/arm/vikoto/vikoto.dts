@@ -51,6 +51,22 @@
 
 &gpio0 {
     status = "okay";
+
+    /*
+    // enables ZMK ext_power on startup, might be needed for some modules
+    vcc_shdn {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-high;
+    };
+
+    // If you want to enable 5V on startup automatically
+    5v_shdn {
+        gpio-hog;
+        gpios = <12 GPIO_ACTIVE_HIGH>;
+        output-high;
+    };
+    */
 };
 
 &gpio1 {
@@ -110,7 +126,6 @@
         compatible = "zephyr,cdc-acm-uart";
     };
 };
-
 
 &flash0 {
     /*
