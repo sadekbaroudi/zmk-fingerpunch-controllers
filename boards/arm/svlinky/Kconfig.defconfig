@@ -1,12 +1,12 @@
 # Copyright (c) 2021 Pete Johanson
 # SPDX-License-Identifier: Apache-2.0
 
-if BOARD_SADEKBAROUDI_XIVIK
+if BOARD_SVLINKY
 
 config BOARD
-	default "sadekbaroudi_xivik"
+	default "svlinky"
 
 config RP2_FLASH_W25Q080
 	default y
 
-endif # BOARD_SADEKBAROUDI_XIVIK
+endif # BOARD_SVLINKY

@@ -1,0 +1,9 @@
+#include "0_1_0/seeed_xiao_connector.dtsi"
+#include "0_1_0/vik_connector.dtsi"
+#include "0_1_0/xivik-pinctl.dtsi"
+
+&i2c1 {
+	pinctrl-0 = <&i2c1_default>;
+	pinctrl-names = "default";
+	clock-frequency = <I2C_BITRATE_FAST>;
+};

@@ -1,0 +1,9 @@
+#include "0_2_0/seeed_xiao_connector.dtsi"
+#include "0_2_0/vik_connector.dtsi"
+#include "0_2_0/xivik-pinctl.dtsi"
+
+&spi0 {
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-names = "default";
+	clock-frequency = <DT_FREQ_M(2)>;
+};
