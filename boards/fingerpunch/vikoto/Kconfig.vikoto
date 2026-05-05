@@ -4,5 +4,7 @@
 # SPDX-License-Identifier: MIT
 
 config BOARD_VIKOTO
-    bool "vikoto"
-    depends on SOC_NRF52840_QIAA
+    select SOC_NRF52840_QIAA
+    imply RETAINED_MEM
+    imply RETENTION
+    imply RETENTION_BOOT_MODE

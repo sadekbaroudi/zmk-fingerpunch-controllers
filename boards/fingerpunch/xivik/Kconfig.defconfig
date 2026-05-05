@@ -3,9 +3,6 @@
 
 if BOARD_XIVIK
 
-config BOARD
-	default "xivik"
-
 config RP2_FLASH_W25Q080
 	default y
 

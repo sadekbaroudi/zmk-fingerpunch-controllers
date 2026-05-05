@@ -3,9 +3,6 @@
 
 if BOARD_SVLINKY
 
-config BOARD
-	default "svlinky"
-
 config RP2_FLASH_W25Q080
 	default y
 
