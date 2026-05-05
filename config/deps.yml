@@ -5,5 +5,5 @@ manifest:
   projects:
     - name: zmk-fingerpunch-vik
       remote: sadekbaroudi
-      revision: main
+      revision: feature/zmk-v0.4-migration
       import: config/deps.yml
