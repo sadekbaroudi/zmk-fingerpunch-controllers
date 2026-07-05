@@ -1,0 +1,13 @@
+board:
+  name: xivik
+  vendor: fingerpunch
+  revision:
+    format: major.minor.patch
+    default: 0.3.0
+    exact: true
+    revisions:
+    - name: 0.1.0
+    - name: 0.2.0
+    - name: 0.3.0
+  socs:
+  - name: rp2040

@@ -1,0 +1,5 @@
+board:
+  name: vikoto
+  vendor: fingerpunch
+  socs:
+  - name: nrf52840

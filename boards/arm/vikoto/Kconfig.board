@@ -1,8 +1,0 @@
-# vikoto board configuration
-
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config BOARD_VIKOTO
-    bool "vikoto"
-    depends on SOC_NRF52840_QIAA

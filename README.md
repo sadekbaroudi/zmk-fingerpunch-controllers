@@ -37,7 +37,7 @@ include:
     shield: <YOUR_KEYBOARD_NAME> vik_cirque_spi
 ```
 
-The above contents will build your keyboard shield, using the vikoto as a controller, with an attached cirque trackpad.
+The above contents will build your keyboard shield, using the vikoto as a controller, with an attached cirque trackpad. Note that pointing device support (including Cirque trackpad) is now built into ZMK — no external modules needed.
 
 ## Examples
 
